@@ -114,3 +114,18 @@ in APPPATH\Views\tampil-transaksi.php on line 38.
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:56:44 --> ErrorException: Undefined array key "no_invoice"
+[Method: GET, Route: barang]
+in APPPATH\Views\tampil-barang.php on line 40.
+ 1 APPPATH\Views\tampil-barang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_invoice"', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(20): view('tampil-barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')

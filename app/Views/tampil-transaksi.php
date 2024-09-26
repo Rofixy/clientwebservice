@@ -16,7 +16,7 @@
         <h1 class="text-center mb-4">Daftar Transaksi</h1>
         
         <!-- Tombol Tambah Barang -->
-        <a href="<?= base_url('transaksi/tambah') ?>" class="btn btn-primary mb-3">Tambah Barang</a>
+        <a href="<?= base_url('transaksi/tambah') ?>" class="btn btn-primary mb-3">Tambah Transaksi</a>
 
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
