@@ -4,12 +4,20 @@ namespace App\Controllers;
 
 use App\Models\BarangModel;
 
-class BarangController extends BaseController
+class Barang extends BaseController
 {
     public function index()
     {
-        $model = new BarangModel();
-        $data['barangs'] = $model->findAll();
-        return view('barang_view', $data);
+        $url = 'http://latihan-url.aksi-pintar.com/api/barang';
+        $client = \Config\Services::curlrequest();
+
+        try {
+            $response = $client->request('GET',$url);
+            $data['barang'] = json_decode($response->getBody(), true);
+
+            return view('tsmpil-barang',$data);
+        } catch (\Exception $e) {
+            return view ('tampil-barang', ['error' => $e->getMessage()]);
+        }
     }
 }
