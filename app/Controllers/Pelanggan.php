@@ -2,14 +2,22 @@
 
 namespace App\Controllers;
 
-use App\Models\PelangganModel;
+///use App\Models\PelangganModel;
 
-class PelangganController extends BaseController
+class Pelanggan extends BaseController
 {
     public function index()
     {
-        $model = new PelangganModel();
-        $data['pelanggan'] = $model->findAll(); // Mengambil semua data pelanggan
-        return view('pelanggan_view', $data); // Mengirim data ke view
+        $url = 'http://10.10.25.10:8080/pelanggan/data';
+        $client = \Config\Services::curlrequest();
+
+        try {
+            $response = $client->request('GET',$url);
+            $data['pelanggan'] = json_decode($response->getBody(), true);
+
+            return view('tampil-pelanggan',$data);
+        } catch (\Exception $e) {
+            return view ('tampil-pelanggan', ['error' => $e->getMessage()]);
+        }
     }
 }
