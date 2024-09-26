@@ -29,8 +29,7 @@
                     <th>kd_user</th>
                     <th>harga</th>
                     <th>stok/th>
-                    <th>Barang</th>
-                    <th>Hapus</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -48,10 +47,7 @@
                     <!-- Kolom barang (untuk melihat detail) -->
                     <td>
                         <a href="<?= base_url('barang/view/'.$b['id']) ?>" class="btn btn-info btn-sm">Lihat</a>
-                    </td>
-
-                    <!-- Kolom Hapus -->
-                    <td>
+                    
                         <a href="<?= base_url('barang/hapus/'.$b['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus barang ini?')">Hapus</a>
                     </td>
                 </tr>
