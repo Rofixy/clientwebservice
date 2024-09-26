@@ -15,9 +15,9 @@ class Pelanggan extends BaseController
             $response = $client->request('GET',$url);
             $data['pelanggan'] = json_decode($response->getBody(), true);
 
-            return view('tampil-pelanggan',$data);
+            return view('pelanggan',$data);
         } catch (\Exception $e) {
-            return view ('tampil-pelanggan', ['error' => $e->getMessage()]);
+            return view ('pelanggan', ['error' => $e->getMessage()]);
         }
     }
 }

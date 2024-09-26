@@ -28,7 +28,7 @@
                     <th>merek</th>
                     <th>kd_user</th>
                     <th>harga</th>
-                    <th>stok/th>
+                    <th>stok</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
