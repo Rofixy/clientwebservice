@@ -9,4 +9,4 @@ $routes->get('/', 'Home::index');
 $routes->get('/users', 'UserController::index');
 $routes->get('/barang', 'Barang::index');
 $routes->get('/transaksi', 'Transaksi::index');
-
+$routes->get('/pelanggan', 'Pelanggan::index');
