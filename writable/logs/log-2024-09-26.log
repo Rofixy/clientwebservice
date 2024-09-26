@@ -129,3 +129,91 @@ in APPPATH\Views\tampil-barang.php on line 40.
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:05:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-pelanggan.php"
+[Method: GET, Route: pelanggan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil-pelanggan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-pelanggan', [], true)
+ 3 APPPATH\Controllers\Pelanggan.php(20): view('tampil-pelanggan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:12:48 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:10 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:21 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:15:32 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:16:18 --> ErrorException: Undefined variable $user
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 47.
+ 1 APPPATH\Views\tampil-users.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 47)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
