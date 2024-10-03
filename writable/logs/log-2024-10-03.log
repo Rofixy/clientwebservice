@@ -55,7 +55,12 @@ INFO - 2024-10-03 03:06:15 --> Session: Class initialized using 'CodeIgniter\Ses
 =======
 >>>>>>> 476a417de646cdd879f8ab939bdb1ab5ec7bf04b
 >>>>>>> origin
+<<<<<<< HEAD
 CRITICAL - 2024-10-03 03:20:57 --> ErrorException: Undefined variable $pelanggan
+=======
+INFO - 2024-10-03 03:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-03 03:20:14 --> ErrorException: Undefined variable $pelanggan
+>>>>>>> origin
 [Method: GET, Route: pelanggan]
 in APPPATH\Views\pelanggan.php on line 34.
  1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
@@ -70,6 +75,7 @@ in APPPATH\Views\pelanggan.php on line 34.
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
 INFO - 2024-10-03 03:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-03 04:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-03 04:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -83,11 +89,26 @@ in APPPATH\Views\tampil-users.php on line 35.
  5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
  6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
  7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+=======
+INFO - 2024-10-03 03:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 03:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-03 04:24:10 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 34.
+ 1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+>>>>>>> origin
  8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2024-10-03 04:16:12 --> ErrorException: Undefined variable $users
 [Method: GET, Route: users]
 in APPPATH\Views\tampil-users.php on line 35.
@@ -98,11 +119,37 @@ in APPPATH\Views\tampil-users.php on line 35.
  5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
  6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
  7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+=======
+CRITICAL - 2024-10-03 04:37:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit-pelanggan.php"
+[Method: GET, Route: pelanggan/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit-pelanggan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 3 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:38:02 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/2]
+in APPPATH\Views\edit-pelanggan.php on line 17.
+ 1 APPPATH\Views\edit-pelanggan.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+>>>>>>> origin
  8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
 CRITICAL - 2024-10-03 04:17:07 --> ErrorException: Undefined variable $users
 [Method: GET, Route: users]
 in APPPATH\Views\tampil-users.php on line 35.
@@ -113,8 +160,123 @@ in APPPATH\Views\tampil-users.php on line 35.
  5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
  6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
  7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+=======
+CRITICAL - 2024-10-03 04:39:55 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/2]
+in APPPATH\Views\edit-pelanggan.php on line 14.
+ 1 APPPATH\Views\edit-pelanggan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+>>>>>>> origin
  8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
+=======
+CRITICAL - 2024-10-03 04:40:48 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/2]
+in APPPATH\Views\edit-pelanggan.php on line 14.
+ 1 APPPATH\Views\edit-pelanggan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(81): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:41:02 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/2]
+in APPPATH\Views\edit-pelanggan.php on line 14.
+ 1 APPPATH\Views\edit-pelanggan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 14)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(81): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:50:27 --> Error: Undefined constant "App\Controllers\this"
+[Method: POST, Route: pelanggan/update]
+in APPPATH\Controllers\Pelanggan.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->editPelanggan()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:51:41 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: POST, Route: pelanggan/update]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 4 APPPATH\Controllers\Pelanggan.php(100): CodeIgniter\HTTP\CURLRequest->request('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->editPelanggan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:52:13 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: POST, Route: pelanggan/update]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 4 APPPATH\Controllers\Pelanggan.php(101): CodeIgniter\HTTP\CURLRequest->request('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->editPelanggan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-03 04:53:23 --> CodeIgniter\HTTP\Exceptions\HTTPException: 22 : The requested URL returned error: 404
+[Method: POST, Route: pelanggan/update]
+in SYSTEMPATH\HTTP\CURLRequest.php on line 694.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(694): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('22', 'The requested URL returned error: 404')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(383): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(152): CodeIgniter\HTTP\CURLRequest->send('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 4 APPPATH\Controllers\Pelanggan.php(100): CodeIgniter\HTTP\CURLRequest->request('PUT', 'http://10.10.25.22:8080/pelanggan/update/2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->editPelanggan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-03 04:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-03 04:55:19 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 34.
+ 1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-03 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 04:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> origin

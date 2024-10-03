@@ -15,7 +15,7 @@ class Barang extends BaseController
             $response = $client->request('GET',$url);
             $data['barang'] = json_decode($response->getBody(), true);
 
-            return view('tsmpil-barang',$data);
+            return view('tampil-barang',$data);
         } catch (\Exception $e) {
             return view ('tampil-barang', ['error' => $e->getMessage()]);
         }

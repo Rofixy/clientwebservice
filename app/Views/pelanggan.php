@@ -42,7 +42,7 @@
 
                     <!-- Kolom Aksi -->
                     <td>
-                        <a href="<?= base_url('pelanggan/view/'.$p['id']) ?>" class="btn btn-info btn-sm">Lihat</a>
+                        <a href="<?= base_url('pelanggan/edit/'.$p['id']) ?>" class="btn btn-info btn-sm">Edit</a>
                         <a href="<?= base_url('pelanggan/hapus/'.$p['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pelanggan ini?')">Hapus</a>
                     </td>
                 </tr>
@@ -90,7 +90,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- Menambahkan Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

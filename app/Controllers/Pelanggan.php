@@ -8,7 +8,7 @@ class Pelanggan extends BaseController
 {
     public function index()
     {
-        $url = 'http://10.10.25.14:8080/pelanggan/data';
+        $url = 'http://10.10.25.22:8080/pelanggan/data';
         $client = \Config\Services::curlrequest();
 
         try {
@@ -36,7 +36,7 @@ class Pelanggan extends BaseController
             'password' => $this->request->getPost('password'),
         ];
 
-        $url = 'http://10.10.25.14:8080/pelanggan/data';
+        $url = 'http://10.10.25.22:8080/pelanggan/store';
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -45,6 +45,8 @@ class Pelanggan extends BaseController
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
         $response = curl_exec($ch);
+
+        //print_r($response);
 
         if (curl_errno($ch)) {
             echo 'Error: ' . curl_error($ch);
@@ -62,7 +64,7 @@ class Pelanggan extends BaseController
 
     public function edit($id)
     {
-        $url = 'http://10.10.25.14:8080/pelanggan/data' . $id;
+        $url = 'http://10.10.25.22:8080/pelanggan/show/' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
@@ -90,28 +92,42 @@ class Pelanggan extends BaseController
             'password' => $this->request->getPost('password'),
         ];
 
-        $url = 'http://10.10.25.14:8080/pelanggan/data';
+        /* $url = 'http://10.10.25.22:8080/pelanggan/update/' . $this->request->getPost('id');
         $client = \Config\Services::curlrequest();
 
-        try {
-            $response = $client->setBody(json_encode($data))
+        $response = $client->setBody(json_encode($data))
                                ->setHeader('Content-Type', 'application/json')
-                               ->request('PUT', $url);
+                               ->request('PUT', $url); */
+        $url = 'http://10.10.25.22:8080/pelanggan/update/' . $this->request->getPost('id');
+        $ch = curl_init($url);
 
-            if ($response->getStatusCode() == 200) {
-                return redirect()->to('/pelanggan')->with('success', 'Pelanggan berhasil diperbarui!');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+
+        $response = curl_exec($ch);
+
+        //print_r($response);
+
+        if (curl_errno($ch)) {
+            echo 'Error: ' . curl_error($ch);
+        } else {
+            $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            if ($http_status == 200) {
+                return redirect()->to('/pelanggan')->with('success', 'Data berhasil disimpan!');
             } else {
-                return redirect()->to('/pelanggan')->with('error', 'Gagal memperbarui pelanggan!');
+                return redirect()->to('/pelanggan')->with('error', 'Gagal menyimpan data! Kode Status:' . $http_status);
             }
-        } catch (\Exception $e) {
-            echo 'Error: ' . $e->getMessage();
         }
+
+        curl_close($ch);
     }
 
     public function hapus($id)
     {
         // URL API tujuan untuk menghapus data berdasarkan ID
-        $url = 'http://10.10.25.14:8080/pelanggan/data' . $id;
+        $url = 'http://10.10.25.22:8080/pelanggan/delete/' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
@@ -128,4 +144,5 @@ class Pelanggan extends BaseController
             return redirect()->to('/pelanggan')->with('error', $e->getMessage());
         }
     }
+
 }
