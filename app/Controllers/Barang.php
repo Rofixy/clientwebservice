@@ -39,3 +39,4 @@ class Barang extends BaseController
         }
     }
 }
+ 

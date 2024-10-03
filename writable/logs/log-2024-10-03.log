@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2024-10-03 01:49:50 --> ErrorException: Undefined variable $users
 [Method: GET, Route: users]
 in APPPATH\Views\tampil-users.php on line 35.
@@ -89,3 +90,7 @@ INFO - 2024-10-03 02:13:15 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-10-03 02:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-03 02:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-03 02:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2024-10-03 02:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 02:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> origin
