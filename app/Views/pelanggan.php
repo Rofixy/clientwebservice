@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Pelanggan</title>
+<<<<<<< HEAD
     
     <!-- Menambahkan Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -22,10 +23,26 @@
             <thead class="thead-dark">
                 <tr>
                     <th>ID</th>
+=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Daftar Pelanggan</h2>
+    
+    <!-- Cek apakah ada data pelanggan -->
+    <?php if (isset($pelanggan) && !empty($pelanggan)) : ?>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No</th>
+>>>>>>> 774f263 (perubahan pada pelanggan)
                     <th>Nama</th>
                     <th>Alamat</th>
                     <th>No HP</th>
                     <th>Username</th>
+<<<<<<< HEAD
                     <th>Password</th>
                     <th>Aksi</th>
                 </tr>
@@ -45,10 +62,24 @@
                         <a href="<?= base_url('pelanggan/view/'.$p['id']) ?>" class="btn btn-info btn-sm">Lihat</a>
                         <a href="<?= base_url('pelanggan/hapus/'.$p['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pelanggan ini?')">Hapus</a>
                     </td>
+=======
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Looping data pelanggan -->
+                <?php $no = 1; foreach ($pelanggan as $row): ?>
+                <tr>
+                    <td><?= $no++; ?></td>
+                    <td><?= esc($row['nama']); ?></td>
+                    <td><?= esc($row['alamat']); ?></td>
+                    <td><?= esc($row['no_hp']); ?></td>
+                    <td><?= esc($row['username']); ?></td>
+>>>>>>> 774f263 (perubahan pada pelanggan)
                 </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
+<<<<<<< HEAD
     </div>
 
     <!-- Modal Tambah Pelanggan -->
@@ -98,3 +129,13 @@
 </body>
 </html>
  
+=======
+    <?php else: ?>
+        <p class="text-center">Tidak ada data pelanggan.</p>
+    <?php endif; ?>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+>>>>>>> 774f263 (perubahan pada pelanggan)

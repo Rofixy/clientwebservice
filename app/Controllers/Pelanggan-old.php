@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+<<<<<<< HEAD
 ///use App\Models\PelangganModel;
 
 class Pelanggan extends BaseController
@@ -127,5 +128,16 @@ class Pelanggan extends BaseController
         } catch (\Exception $e) {
             return redirect()->to('/pelanggan')->with('error', $e->getMessage());
         }
+=======
+use App\Models\PelangganModel;
+
+class PelangganController extends BaseController
+{
+    public function index()
+    {
+        $model = new PelangganModel();
+        $data['pelanggan'] = $model->findAll(); // Mengambil semua data pelanggan
+        return view('pelanggan_view', $data); // Mengirim data ke view
+>>>>>>> 774f263 (perubahan pada pelanggan)
     }
 }
