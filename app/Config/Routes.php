@@ -13,4 +13,3 @@ $routes->get('/pelanggan', 'Pelanggan::index');
 
 $routes->post('/pelanggan/tambah', 'Pelanggan::sendData');
 $routes->post('/users/tambah', 'Users::sendData');
-$routes->get('/users/tambah', 'Users::tambahUsers');
