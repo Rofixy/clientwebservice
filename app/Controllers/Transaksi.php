@@ -17,7 +17,7 @@ class TransaksiController extends BaseController
     {
         return view('transaksi_create');
     }
-
+   
     public function store()
     {
         $model = new TransaksiModel();
