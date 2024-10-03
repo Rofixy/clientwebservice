@@ -1,0 +1,350 @@
+<<<<<<< HEAD
+CRITICAL - 2024-09-26 02:20:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-barang.php"
+=======
+CRITICAL - 2024-09-26 01:48:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-barang.php"
+>>>>>>> origin/ro
+[Method: GET, Route: barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil-barang.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-barang', [], true)
+<<<<<<< HEAD
+ 3 APPPATH\Controllers\Barang.php(20): view('tampil-barang', [...])
+=======
+ 3 APPPATH\Controllers\Barang.php(22): view('tampil-barang', [...])
+>>>>>>> origin/ro
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 02:23:35 --> ErrorException: Undefined variable $users
+[Method: GET, Route: barang]
+in APPPATH\Views\tampil-barang.php on line 20.
+ 1 APPPATH\Views\tampil-barang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(20): view('tampil-barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 02:24:11 --> ErrorException: Undefined variable $user
+[Method: GET, Route: barang]
+in APPPATH\Views\tampil-barang.php on line 22.
+ 1 APPPATH\Views\tampil-barang.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(20): view('tampil-barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:03:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-transaksi.php"
+[Method: GET, Route: transaksi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil-transaksi.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:04:07 --> ErrorException: Undefined variable $transaksi
+[Method: GET, Route: transaksi]
+in APPPATH\Views\tampil-transaksi.php on line 24.
+ 1 APPPATH\Views\tampil-transaksi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:09:50 --> ErrorException: Undefined variable $transaksi
+[Method: GET, Route: transaksi]
+in APPPATH\Views\tampil-transaksi.php on line 24.
+ 1 APPPATH\Views\tampil-transaksi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:14:19 --> ErrorException: Undefined variable $transaksi
+[Method: GET, Route: transaksi]
+in APPPATH\Views\tampil-transaksi.php on line 24.
+ 1 APPPATH\Views\tampil-transaksi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:24:03 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: transaksi]
+in APPPATH\Views\tampil-transaksi.php on line 38.
+ 1 APPPATH\Views\tampil-transaksi.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 03:56:44 --> ErrorException: Undefined array key "no_invoice"
+[Method: GET, Route: barang]
+in APPPATH\Views\tampil-barang.php on line 40.
+ 1 APPPATH\Views\tampil-barang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_invoice"', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-barang.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(20): view('tampil-barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
+CRITICAL - 2024-09-26 05:08:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-pelanggan.php"
+=======
+CRITICAL - 2024-09-26 05:05:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-pelanggan.php"
+>>>>>>> 31a0a24372876e4ae87cdc38fa430fcc60e212a6
+[Method: GET, Route: pelanggan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil-pelanggan.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-pelanggan', [], true)
+ 3 APPPATH\Controllers\Pelanggan.php(20): view('tampil-pelanggan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+<<<<<<< HEAD
+CRITICAL - 2024-09-26 05:09:12 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:10:11 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:19 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:28 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:33 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:53 --> Error: Call to undefined function pase_url()
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 45.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+=======
+CRITICAL - 2024-09-26 05:12:48 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+=======
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\kelompokclient\\public\\index.php')
+CRITICAL - 2024-09-26 04:20:33 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\tampil-pelanggan.php on line 48.
+ 1 APPPATH\Views\tampil-pelanggan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\kelompokclient\\app\\Views\\tampil-pelanggan.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\kelompokclient\\app\\Views\\tampil-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(24): view('tampil-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+>>>>>>> origin/ro
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:10 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+=======
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\kelompokclient\\public\\index.php')
+CRITICAL - 2024-09-26 04:22:47 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\tampil-pelanggan.php on line 48.
+ 1 APPPATH\Views\tampil-pelanggan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\kelompokclient\\app\\Views\\tampil-pelanggan.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\kelompokclient\\app\\Views\\tampil-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(24): view('tampil-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+>>>>>>> origin/ro
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:13:21 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:15:32 --> ErrorException: Undefined variable $users
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 35.
+ 1 APPPATH\Views\tampil-users.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-09-26 05:16:18 --> ErrorException: Undefined variable $user
+[Method: GET, Route: users/]
+in APPPATH\Views\tampil-users.php on line 47.
+ 1 APPPATH\Views\tampil-users.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php', 47)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-users.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-users', [], true)
+ 5 APPPATH\Controllers\Users.php(20): view('tampil-users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+>>>>>>> 31a0a24372876e4ae87cdc38fa430fcc60e212a6
+=======
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\kelompokclient\\public\\index.php')
+>>>>>>> origin/ro
