@@ -17,7 +17,7 @@ class Transaksi extends BaseController
 
 <<<<<<< HEAD
     public function create()
-    {
+      {
         return view('transaksi_create');
     }
    
