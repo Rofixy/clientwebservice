@@ -15,8 +15,8 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Daftar Pengguna</h1>
         
-        <!-- Tombol Tambah Pengguna -->
-        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahPelanggan">Tambah User</button>
+        <!-- Tombol Tambah User -->
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahUsers">Tambah User</button>
 
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
@@ -65,11 +65,7 @@
         </div>
         <div class="modal-body">
             <!-- Form Tambah Users -->
-            <form action="<?= base_url('users/sendData') ?>" method="post">
-            <div class="form-group">
-                <label for="id">ID</label>
-                <input type="text" class="form-control" name="id" required>
-            </div>
+            <form action="<?= base_url('users/tambah') ?>" method="post">
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" name="nama" required>
@@ -100,7 +96,6 @@
         </div>
     </div>
     </div>
-
 
     <!-- Menambahkan Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
