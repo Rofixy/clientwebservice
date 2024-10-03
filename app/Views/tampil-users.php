@@ -16,7 +16,7 @@
         <h1 class="text-center mb-4">Daftar Pengguna</h1>
         
         <!-- Tombol Tambah Pengguna -->
-        <a href="<?= base_url('users/tambah') ?>" class="btn btn-primary mb-3">Tambah Pengguna</a>
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahPelanggan">Tambah User</button>
 
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
