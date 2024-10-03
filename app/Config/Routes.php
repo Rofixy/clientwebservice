@@ -10,3 +10,5 @@ $routes->get('/users', 'Users::index');
 $routes->get('/barang', 'Barang::index');
 $routes->get('/transaksi', 'Transaksi::index');
 $routes->get('/pelanggan', 'Pelanggan::index');
+
+$routes->post('/pelanggan/tambah', 'Pelanggan::sendData');
