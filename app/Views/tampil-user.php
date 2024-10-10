@@ -16,7 +16,7 @@
         <h1 class="text-center mb-4">Daftar Pengguna</h1>
         
         <!-- Tombol Tambah User -->
-        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahUsers">Tambah User</button>
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahuser">Tambah User</button>
 
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
@@ -32,7 +32,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($users as $u): ?>
+                <?php foreach ($user as $u): ?>
                 <tr>
                     <td><?= esc($u['id']) ?></td>
                     <td><?= esc($u['nama']) ?: 'Tidak ada nama' ?></td>
@@ -44,8 +44,8 @@
 
                     <!-- Kolom aksi (untuk melihat detail) -->
                     <td>
-                        <a href="<?= base_url('users/view/'.$u['id']) ?>" class="btn btn-info btn-sm">Lihat</a>
-                        <a href="<?= base_url('users/hapus/'.$u['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pengguna ini?')">Hapus</a>
+                        <a href="<?= base_url('user/edit/'.$u['id']) ?>" class="btn btn-info btn-sm">Edit</a>
+                        <a href="<?= base_url('user/hapus/'.$u['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pengguna ini?')">Hapus</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Modal Tambah User -->
-    <div class="modal fade" id="modalTambahUsers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalTambahuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
@@ -64,8 +64,8 @@
             </button>
         </div>
         <div class="modal-body">
-            <!-- Form Tambah Users -->
-            <form action="<?= base_url('users/tambah') ?>" method="post">
+            <!-- Form Tambah user -->
+            <form action="<?= base_url('user/tambah') ?>" method="post">
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" name="nama" required>

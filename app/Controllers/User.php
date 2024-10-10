@@ -2,28 +2,28 @@
 
 namespace App\Controllers;
 
-use App\Models\UsersModel;
+use App\Models\userModel;
 
-class Users extends BaseController
+class user extends BaseController
 {
     public function index()
     {
-        $url = 'http://10.10.25.14:8080/users/data';
+        $url = 'http://10.10.15.76:8080/user/view';
         $client = \Config\Services::curlrequest();
 
         try {
             $response = $client->request('GET',$url);
-            $data['users'] = json_decode($response->getBody(), true);
+            $data['user'] = json_decode($response->getBody(), true);
 
-            return view('tampil-users',$data);
+            return view('tampil-user',$data);
         } catch (\Exception $e) {
-            return view ('tampil-users', ['error' => $e->getMessage()]);
+            return view ('tampil-user', ['error' => $e->getMessage()]);
         }
     }
 
-    public function tambahUsers()
+    public function tambahuser()
     {
-        return view ('tambah-users');
+        return view ('tambah-user');
     }
 
     public function sendData()
@@ -39,7 +39,7 @@ class Users extends BaseController
         ];
 
         
-        $url = 'http://10.10.25.14:8080/data/store';
+        $url = 'http://10.10.15.76:8080/data/store';
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -54,9 +54,9 @@ class Users extends BaseController
         } else {
             $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             if ($http_status == 200) {
-                return redirect()->to('/users')->with('success', 'Data berhasil disimpan!');
+                return redirect()->to('/user')->with('success', 'Data berhasil disimpan!');
             } else {
-                return redirect()->to('/users')->with('error', 'Gagal menyimpan data! Kode Status:' . $http_status);
+                return redirect()->to('/user')->with('error', 'Gagal menyimpan data! Kode Status:' . $http_status);
             }
         }
 
@@ -65,24 +65,24 @@ class Users extends BaseController
 
     public function edit($id)
     {
-        $url = 'http://10.10.25.14:8080/data/update' . $id;
+        $url = 'http://10.10.15.76:8080/data/update' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
             $response = $client->request('GET', $url);
-            $data['users'] = json_decode($response->getBody(), true);
+            $data['user'] = json_decode($response->getBody(), true);
 
-            if (!$data['userss']) {
-                return redirect()->to('/users')->with('error', 'User tidak ditemukan.');
+            if (!$data['user']) {
+                return redirect()->to('/user')->with('error', 'User tidak ditemukan.');
             }
 
-            return view('edit-users', $data);
+            return view('edit-user', $data);
         } catch (\Exception $e) {
-            return view('edit-users', ['error' => $e->getMessage()]);
+            return view('edit-user', ['error' => $e->getMessage()]);
         }
     }
 
-    public function editUsers()
+    public function edituser()
     {
         $data = [
             'id' => $this->request->getPost('id'),
@@ -94,7 +94,7 @@ class Users extends BaseController
             'role' => $this->request->getPost('role'),
         ];
 
-        $url = 'http://10.10.25.14:8080/data/update';
+        $url = 'http://10.10.15.76:8080/data/update';
         $client = \Config\Services::curlrequest();
 
         try {
@@ -103,9 +103,9 @@ class Users extends BaseController
                                ->request('PUT', $url);
 
             if ($response->getStatusCode() == 200) {
-                return redirect()->to('/users')->with('success', 'User berhasil diperbarui!');
+                return redirect()->to('/user')->with('success', 'User berhasil diperbarui!');
             } else {
-                return redirect()->to('/users')->with('error', 'Gagal memperbarui User!');
+                return redirect()->to('/user')->with('error', 'Gagal memperbarui User!');
             }
         } catch (\Exception $e) {
             echo 'Error: ' . $e->getMessage();
@@ -116,7 +116,7 @@ class Users extends BaseController
     public function hapus($id)
     {
         // URL API tujuan untuk menghapus data berdasarkan ID
-        $url = 'http://10.10.25.14:8080/data/delete' . $id;
+        $url = 'http://10.10.15.76:8080/data/delete' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
@@ -125,12 +125,12 @@ class Users extends BaseController
 
             // Cek status penghapusan
             if ($response->getStatusCode() == 200) {
-                return redirect()->to('/users')->with('success', 'User berhasil dihapus!');
+                return redirect()->to('/user')->with('success', 'User berhasil dihapus!');
             } else {
-                return redirect()->to('/users')->with('error', 'Gagal menghapus User!');
+                return redirect()->to('/user')->with('error', 'Gagal menghapus User!');
             }
         } catch (\Exception $e) {
-            return redirect()->to('/users')->with('error', $e->getMessage());
+            return redirect()->to('/user')->with('error', $e->getMessage());
         }
     }
 }
