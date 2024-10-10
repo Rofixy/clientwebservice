@@ -8,7 +8,7 @@ class Pelanggan extends BaseController
 {
     public function index()
     {
-        $url = 'http://10.10.25.22:8080/pelanggan/data';
+        $url = 'http://10.10.25.13:8080/pelanggan/data';
         $client = \Config\Services::curlrequest();
 
         try {
@@ -36,7 +36,7 @@ class Pelanggan extends BaseController
             'password' => $this->request->getPost('password'),
         ];
 
-        $url = 'http://10.10.25.22:8080/pelanggan/store';
+        $url = 'http://10.10.25.13:8080/pelanggan/store';
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -64,7 +64,7 @@ class Pelanggan extends BaseController
 
     public function edit($id)
     {
-        $url = 'http://10.10.25.22:8080/pelanggan/show/' . $id;
+        $url = 'http://10.10.25.13:8080/pelanggan/show/' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
@@ -98,7 +98,7 @@ class Pelanggan extends BaseController
         $response = $client->setBody(json_encode($data))
                                ->setHeader('Content-Type', 'application/json')
                                ->request('PUT', $url); */
-        $url = 'http://10.10.25.22:8080/pelanggan/update/' . $this->request->getPost('id');
+        $url = 'http://10.10.25.13:8080/pelanggan/update/' . $this->request->getPost('id');
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -127,7 +127,7 @@ class Pelanggan extends BaseController
     public function hapus($id)
     {
         // URL API tujuan untuk menghapus data berdasarkan ID
-        $url = 'http://10.10.25.22:8080/pelanggan/delete/' . $id;
+        $url = 'http://10.10.25.13:8080/pelanggan/delete/' . $id;
         $client = \Config\Services::curlrequest();
 
         try {

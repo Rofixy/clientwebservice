@@ -280,3 +280,26 @@ in APPPATH\Views\pelanggan.php on line 34.
 INFO - 2024-10-03 04:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-03 04:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 >>>>>>> origin
+INFO - 2024-10-03 05:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-03 05:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-03 05:13:53 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 34.
+ 1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')

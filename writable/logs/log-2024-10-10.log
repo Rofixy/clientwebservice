@@ -1,0 +1,129 @@
+INFO - 2024-10-10 02:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:26:51 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/4]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-10 02:35:54 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/4]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-10 02:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:40:43 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/4]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-10 02:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:40:57 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/3]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-10 02:43:16 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/3]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-10 02:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 02:44:31 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/3]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-10 02:48:00 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan/edit/4]
+in APPPATH\Views\edit-pelanggan.php on line 15.
+ 1 APPPATH\Views\edit-pelanggan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-10 02:48:15 --> ErrorException: Undefined array key "nama"
+[Method: GET, Route: pelanggan/edit/1]
+in APPPATH\Views\edit-pelanggan.php on line 19.
+ 1 APPPATH\Views\edit-pelanggan.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php', 19)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(80): view('edit-pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-10 02:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 02:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
