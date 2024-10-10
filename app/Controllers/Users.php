@@ -31,7 +31,7 @@ class Users extends BaseController
         $data = [
             'id' => $this->request->getPost('id'),
             'nama' => $this->request->getPost('nama'),
-            'usersname' => $this->request->getPost('usersname'),
+            'username' => $this->request->getPost('username'),
             'password' => $this->request->getPost('password'),
             'alamat' => $this->request->getPost('alamat'),
             'no_hp' => $this->request->getPost('no_hp'),
@@ -39,7 +39,7 @@ class Users extends BaseController
         ];
 
         
-        $url = 'http://10.10.25.13:8080/data/store';
+        $url = 'http://10.10.25.13:8080/users/store';
         $ch = curl_init($url);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -48,6 +48,8 @@ class Users extends BaseController
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
         $response = curl_exec($ch);
+
+        //print_r($response);
 
         if (curl_errno($ch)) {
             echo 'Error: ' . curl_error($ch);
@@ -65,7 +67,7 @@ class Users extends BaseController
 
     public function edit($id)
     {
-        $url = 'http://10.10.25.13:8080/data/update' . $id;
+        $url = 'http://10.10.25.13:8080/users/update/' . $id;
         $client = \Config\Services::curlrequest();
 
         try {
@@ -87,50 +89,82 @@ class Users extends BaseController
         $data = [
             'id' => $this->request->getPost('id'),
             'nama' => $this->request->getPost('nama'),
-            'usersname' => $this->request->getPost('usersname'),
+            'username' => $this->request->getPost('username'),
             'password' => $this->request->getPost('password'),
             'alamat' => $this->request->getPost('alamat'),
             'no_hp' => $this->request->getPost('no_hp'),
             'role' => $this->request->getPost('role'),
         ];
 
-        $url = 'http://10.10.25.13:8080/data/update';
-        $client = \Config\Services::curlrequest();
+        $url = 'http://10.10.25.13:8080/users/update/' . $this->request->getPost('id');
+        $ch = curl_init($url);
 
-        try {
-            $response = $client->setBody(json_encode($data))
-                               ->setHeader('Content-Type', 'application/json')
-                               ->request('PUT', $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
-            if ($response->getStatusCode() == 200) {
-                return redirect()->to('/users')->with('success', 'users berhasil diperbarui!');
+        $response = curl_exec($ch);
+
+        //print_r($response);
+
+        if (curl_errno($ch)) {
+            echo 'Error: ' . curl_error($ch);
+        } else {
+            $http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            if ($http_status == 200) {
+                return redirect()->to('/users')->with('success', 'Data berhasil disimpan!');
             } else {
-                return redirect()->to('/users')->with('error', 'Gagal memperbarui users!');
+                return redirect()->to('/users')->with('error', 'Gagal menyimpan data! Kode Status:' . $http_status);
             }
-        } catch (\Exception $e) {
-            echo 'Error: ' . $e->getMessage();
         }
+
+        curl_close($ch);
     }
 
     
+    // public function hapus($id)
+    // {
+    //     // URL API tujuan untuk menghapus data berdasarkan ID
+    //     $url = 'http://10.10.25.13:8080/users/delete/' . $id;
+    //     $client = \Config\Services::curlrequest();
+
+    //     try {
+    //         // Kirim request DELETE untuk menghapus pengguna
+    //         $response = $client->request('DELETE', $url);
+
+    //         // Cek status penghapusan
+    //         if ($response->getStatusCode() == 200) {
+    //             return redirect()->to('/users')->with('success', 'Pelanggan berhasil dihapus!');
+    //         } else {
+    //             return redirect()->to('/users')->with('error', 'Gagal menghapus pengguna!');
+    //         }
+    //     } catch (\Exception $e) {
+    //         return redirect()->to('/users')->with('error', $e->getMessage());
+    //     }
+    // }
+
     public function hapus($id)
-    {
-        // URL API tujuan untuk menghapus data berdasarkan ID
-        $url = 'http://10.10.25.13:8080/data/delete' . $id;
-        $client = \Config\Services::curlrequest();
+{
+    // URL API tujuan untuk menghapus data berdasarkan ID
+    $url = 'http://10.10.25.13:8080/users/delete/' . $id;
+    $client = \Config\Services::curlrequest();
 
-        try {
-            // Kirim request DELETE untuk menghapus barang
-            $response = $client->request('DELETE', $url);
+    try {
+        // Kirim request DELETE untuk menghapus pengguna
+        $response = $client->delete($url);
 
-            // Cek status penghapusan
-            if ($response->getStatusCode() == 200) {
-                return redirect()->to('/users')->with('success', 'users berhasil dihapus!');
-            } else {
-                return redirect()->to('/users')->with('error', 'Gagal menghapus users!');
-            }
-        } catch (\Exception $e) {
-            return redirect()->to('/users')->with('error', $e->getMessage());
+        // Cek status penghapusan
+        if ($response->getStatusCode() === 200) {
+            return redirect()->to('/users')->with('success', 'Pelanggan berhasil dihapus!');
+        } else {
+            $errorMessage = $response->getBody() ?: 'Gagal menghapus pengguna! Silakan coba lagi.';
+            return redirect()->to('/users')->with('error', $errorMessage);
         }
+    } catch (\Exception $e) {
+        // Tangani kesalahan ketika mengirim request ke server API
+        return redirect()->to('/users')->with('error', 'Terjadi kesalahan: ' . $e->getMessage());
     }
+}
+
 }

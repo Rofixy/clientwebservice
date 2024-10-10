@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/users', 'Users::index');
 $routes->get('/barang', 'Barang::index');
+$routes->get('/barang/hapus/(:num)', 'Barang::delete/$1');
 $routes->get('/transaksi', 'Transaksi::index');
 $routes->get('/pelanggan', 'Pelanggan::index');
 
