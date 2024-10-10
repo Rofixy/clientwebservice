@@ -32,7 +32,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($user as $u): ?>
+                <?php foreach ($users as $u): ?>
                 <tr>
                     <td><?= esc($u['id']) ?></td>
                     <td><?= esc($u['nama']) ?: 'Tidak ada nama' ?></td>
@@ -44,8 +44,8 @@
 
                     <!-- Kolom aksi (untuk melihat detail) -->
                     <td>
-                        <a href="<?= base_url('user/edit/'.$u['id']) ?>" class="btn btn-info btn-sm">Edit</a>
-                        <a href="<?= base_url('user/hapus/'.$u['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pengguna ini?')">Hapus</a>
+                        <a href="<?= base_url('users/edit/'.$u['id']) ?>" class="btn btn-info btn-sm">Edit</a>
+                        <a href="<?= base_url('users/hapus/'.$u['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus pengguna ini?')">Hapus</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -65,7 +65,7 @@
         </div>
         <div class="modal-body">
             <!-- Form Tambah user -->
-            <form action="<?= base_url('user/tambah') ?>" method="post">
+            <form action="<?= base_url('users/tambah') ?>" method="post">
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" name="nama" required>
