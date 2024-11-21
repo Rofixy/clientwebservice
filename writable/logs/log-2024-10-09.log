@@ -1,0 +1,225 @@
+CRITICAL - 2024-10-09 08:11:14 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 34.
+ 1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 08:59:00 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan.php on line 34.
+ 1 APPPATH\Views\pelanggan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(20): view('pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 08:59:34 --> ErrorException: Undefined variable $transaksi
+[Method: GET, Route: transaksi]
+in APPPATH\Views\tampil-transaksi.php on line 38.
+ 1 APPPATH\Views\tampil-transaksi.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-transaksi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-transaksi', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(20): view('tampil-transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-09 09:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 09:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 09:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 09:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 09:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-09 10:33:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil-user.php"
+[Method: GET, Route: user]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil-user.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 3 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:33:29 --> ErrorException: Undefined variable $users
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:35:33 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:35:36 --> ErrorException: Undefined variable $pelanggan
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelanggan', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:40:24 --> ErrorException: Undefined variable $users
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-09 10:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-09 10:41:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit-user.php"
+[Method: GET, Route: user/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit-user.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-user', [], true)
+ 3 APPPATH\Controllers\User.php(81): view('edit-user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:42:49 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user/edit/1]
+in APPPATH\Views\edit-user.php on line 15.
+ 1 APPPATH\Views\edit-user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-user.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-user', [], true)
+ 5 APPPATH\Controllers\User.php(81): view('edit-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-09 10:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-09 10:43:23 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user/edit/1]
+in APPPATH\Views\edit-user.php on line 15.
+ 1 APPPATH\Views\edit-user.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-user.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\edit-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit-user', [], true)
+ 5 APPPATH\Controllers\User.php(81): view('edit-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:49:04 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:49:09 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+CRITICAL - 2024-10-09 10:50:08 --> ErrorException: Undefined variable $user
+[Method: GET, Route: user]
+in APPPATH\Views\tampil-user.php on line 35.
+ 1 APPPATH\Views\tampil-user.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\clientwebservice\\app\\Views\\tampil-user.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('tampil-user', [], true)
+ 5 APPPATH\Controllers\User.php(20): view('tampil-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\user->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\clientwebservice\\public\\index.php')
+INFO - 2024-10-09 10:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-09 10:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

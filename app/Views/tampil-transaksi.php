@@ -15,8 +15,8 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Daftar Transaksi</h1>
         
-        <!-- Tombol Tambah Barang -->
-        <a href="<?= base_url('transaksi/tambah') ?>" class="btn btn-primary mb-3">Tambah Transaksi</a>
+        <!-- Tombol Tambah Transaksi -->
+        <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalTambahTransaksi">Tambah Transaksi</button>
 
         <table class="table table-bordered table-hover table-striped">
             <thead class="thead-dark">
@@ -29,9 +29,7 @@
                     <th>Tanggal Kembali</th>
                     <th>Status</th>
                     <th>Keterangan</th>
-                    <th>Created At</th>
-                    <th>Transaksi</th>
-                    <th>Hapus</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,15 +43,10 @@
                     <td><?= esc($t['tgl_kembali']) ?></td>
                     <td><?= esc($t['status']) ?></td>
                     <td><?= esc($t['keterangan']) ?></td>
-                    <td><?= esc($t['created_at']) ?></td>
 
-                    <!-- Kolom Transaksi (untuk melihat detail) -->
+                    <!-- Kolom Aksi -->
                     <td>
-                        <a href="<?= base_url('transaksi/view/'.$t['id']) ?>" class="btn btn-info btn-sm">Lihat</a>
-                    </td>
-
-                    <!-- Kolom Hapus -->
-                    <td>
+                        <a href="<?= base_url('transaksi/edit/'.$t['id']) ?>" class="btn btn-info btn-sm">Edit</a>
                         <a href="<?= base_url('transaksi/hapus/'.$t['id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus transaksi ini?')">Hapus</a>
                     </td>
                 </tr>
@@ -62,6 +55,54 @@
         </table>
     </div>
 
+    <!-- Modal Tambah Transaksi -->
+    <div class="modal fade" id="modalTambahTransaksi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Transaksi</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Form Tambah Transaksi -->
+            <form action="<?= base_url('transaksi/tambah') ?>" method="post">
+              <div class="form-group">
+                <label for="no_invoice">No Invoice</label>
+                <input type="text" class="form-control" name="no_invoice" required>
+              </div>
+              <div class="form-group">
+                <label for="kd_user">Kode User</label>
+                <input type="text" class="form-control" name="kd_user" required>
+              </div>
+              <div class="form-group">
+                <label for="kd_pelanggan">Kode Pelanggan</label>
+                <input type="text" class="form-control" name="kd_pelanggan" required>
+              </div>
+              <div class="form-group">
+                <label for="tgl_mulai">Tanggal Mulai</label>
+                <input type="date" class="form-control" name="tgl_mulai" required>
+              </div>
+              <div class="form-group">
+                <label for="tgl_kembali">Tanggal Kembali</label>
+                <input type="date" class="form-control" name="tgl_kembali" required>
+              </div>
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" name="status" required>
+              </div>
+              <div class="form-group">
+                <label for="keterangan">Keterangan</label>
+                <input type="text" class="form-control" name="keterangan" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Menambahkan Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
